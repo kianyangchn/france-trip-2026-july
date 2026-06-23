@@ -296,6 +296,11 @@
           "category": "viewpoint",
           "name_zh": "小象鼻山",
           "google_maps_url": "https://maps.app.goo.gl/wyC4m1qeCRrN56jEA?g_st=ic"
+        },
+        {
+          "category": "restaurant",
+          "name_zh": "回程可途径自助餐",
+          "google_maps_url": "https://maps.app.goo.gl/EjCUj3VUMu5C3n6z5?g_st=ic"
         }
       ]
     },
@@ -324,12 +329,6 @@
           "category": "attraction",
           "name_zh": "巴约大教堂",
           "google_maps_url": "https://maps.app.goo.gl/zukk9vyiE467AkD87?g_st=ic"
-        },
-        {
-          "category": "restaurant",
-          "name_zh": "餐厅推荐",
-          "description_zh": "自助",
-          "google_maps_url": "https://maps.app.goo.gl/L4Tpmfpz1bpSEDA86?g_st=ic"
         },
         {
           "category": "attraction",
@@ -488,31 +487,31 @@
     },
     {
       "date": "2026-07-18",
-      "title_zh": "退房去北部海岸",
-      "title_en": "To the Northern Coast",
+      "title_zh": "退房 · 白崖",
+      "title_en": "White Cliffs",
       "weekday_zh": "周六",
-      "summary_zh": "退房后可途径自助餐、playground 和白崖，入住 Best Western Marquise",
+      "summary_zh": "退房后去白崖，安排停车、缆车和海鲜市场，入住 Best Western Marquise",
       "coords": {
-        "name": "Marquise",
-        "latitude": 50.8125,
-        "longitude": 1.7073,
+        "name": "Cap Blanc-Nez",
+        "latitude": 50.9242,
+        "longitude": 1.7108,
         "timezone": "Europe/Paris"
       },
       "items": [
         {
-          "category": "restaurant",
-          "name_zh": "途径自助餐",
-          "google_maps_url": "https://maps.app.goo.gl/EjCUj3VUMu5C3n6z5?g_st=ic"
+          "category": "parking",
+          "name_zh": "白崖停车场",
+          "google_maps_url": "https://maps.app.goo.gl/A5a2ZsQedfMHEFt16?g_st=ic"
         },
         {
-          "category": "playground",
-          "name_zh": "途径 Playground",
-          "google_maps_url": "https://maps.app.goo.gl/wmfmcE9Gqw4d4RoJ7?g_st=ic"
+          "category": "activity",
+          "name_zh": "缆车",
+          "google_maps_url": "https://maps.app.goo.gl/sBdWRBsU1y3dCwiMA?g_st=ic"
         },
         {
-          "category": "viewpoint",
-          "name_zh": "途径白崖",
-          "google_maps_url": "https://maps.app.goo.gl/DQFrDAmSaZuiR4KN6?g_st=ic"
+          "category": "market",
+          "name_zh": "海鲜市场",
+          "google_maps_url": "https://maps.app.goo.gl/vG8NT6PDRqcPswoy8?g_st=ic"
         },
         {
           "category": "hotel",
