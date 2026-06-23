@@ -6,7 +6,7 @@ from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from app.models import get_category_label, get_cta, load_trip
+from app.models import ItineraryItem, get_category_label, get_cta, load_trip
 from app.weather import get_weather_for_days
 
 BASE_DIR = Path(__file__).parent
@@ -50,12 +50,46 @@ def _today_day_number() -> int | None:
     return None
 
 
+def _hotel_items_through(day_number: int) -> list[ItineraryItem]:
+    hotels: list[ItineraryItem] = []
+    for day in trip.days[:day_number]:
+        hotels.extend(item for item in day.items if item.category == "hotel")
+    return hotels
+
+
+def _current_accommodation(day_number: int) -> ItineraryItem | None:
+    hotels = _hotel_items_through(day_number)
+    if hotels:
+        return hotels[-1]
+    return None
+
+
+def _accommodation_stays() -> list[dict[str, str | None]]:
+    stays: list[dict[str, str | None]] = []
+    seen: set[tuple[str, str | None]] = set()
+    for index, day in enumerate(trip.days, start=1):
+        for item in day.items:
+            if item.category != "hotel":
+                continue
+            key = (item.name_zh, item.google_maps_url)
+            if key in seen:
+                continue
+            seen.add(key)
+            stays.append({
+                "label": f"{day.date[5:7]}.{day.date[8:10]} 起",
+                "name": item.name_zh,
+                "url": item.google_maps_url,
+            })
+    return stays
+
+
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
     weather = await get_weather_for_days(trip)
     return templates.TemplateResponse(request, "index.html", {
         "trip": trip,
         "weather": weather,
+        "accommodation_stays": _accommodation_stays(),
     })
 
 
@@ -65,6 +99,7 @@ async def overview(request: Request):
     return templates.TemplateResponse(request, "index.html", {
         "trip": trip,
         "weather": weather,
+        "accommodation_stays": _accommodation_stays(),
     })
 
 
@@ -80,4 +115,5 @@ async def day_view(request: Request, day_number: int):
         "day_number": day_number,
         "total_days": len(trip.days),
         "weather": weather,
+        "current_accommodation": _current_accommodation(day_number),
     })

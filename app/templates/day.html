@@ -26,15 +26,15 @@
     {% include "components/timeline.html" %}
 
     {# --- Accommodation card at bottom --- #}
-    {% if trip.accommodation %}
+    {% if current_accommodation %}
     <div class="accommodation-card animate-in">
         <div class="accommodation-icon">{% include "components/icons/hotel.svg" %}</div>
         <div class="accommodation-info">
             <span class="accommodation-label">住宿</span>
-            <span class="accommodation-name">{{ trip.accommodation.name_zh }}</span>
+            <span class="accommodation-name">{{ current_accommodation.name_zh }}</span>
         </div>
-        {% if trip.accommodation.google_maps_url %}
-        <a href="{{ trip.accommodation.google_maps_url }}" target="_blank" rel="noopener" class="accommodation-link">
+        {% if current_accommodation.google_maps_url %}
+        <a href="{{ current_accommodation.google_maps_url }}" target="_blank" rel="noopener" class="accommodation-link">
             导航
         </a>
         {% endif %}
