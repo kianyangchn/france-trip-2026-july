@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="day-sticky-top">
+    {# --- Glassmorphism date header --- #}
+    {% include "components/header.html" %}
+
+    {# --- Horizontal day nav --- #}
+    {% include "components/nav.html" %}
+</div>
+
+<main class="day-main">
+    {# --- Day notes as sticky notes --- #}
+    {% if day.notes %}
+    <div class="day-notes">
+        {% for note in day.notes %}
+        <div class="sticky-note animate-in">
+            <span class="sticky-note-icon">📌</span>
+            {{ note }}
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {# --- Timeline --- #}
+    {% include "components/timeline.html" %}
+
+    {# --- Accommodation card at bottom --- #}
+    {% if trip.accommodation %}
+    <div class="accommodation-card animate-in">
+        <div class="accommodation-icon">{% include "components/icons/hotel.svg" %}</div>
+        <div class="accommodation-info">
+            <span class="accommodation-label">住宿</span>
+            <span class="accommodation-name">{{ trip.accommodation.name_zh }}</span>
+        </div>
+        {% if trip.accommodation.google_maps_url %}
+        <a href="{{ trip.accommodation.google_maps_url }}" target="_blank" rel="noopener" class="accommodation-link">
+            导航
+        </a>
+        {% endif %}
+    </div>
+    {% endif %}
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/animations.js"></script>
+{% endblock %}

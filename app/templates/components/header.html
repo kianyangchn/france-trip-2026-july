@@ -1,0 +1,28 @@
+<header class="glass-header">
+    <a href="/overview" class="glass-header-back" aria-label="返回总览">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18"/><path d="M3 6h18"/><path d="M3 18h18"/></svg>
+    </a>
+    <div class="glass-header-content">
+        <div class="glass-header-date">
+            <span class="glass-header-date-text">{{ day.date[5:7] }}月{{ day.date[8:] }}日</span>
+            <span class="glass-header-day-badge">第{{ day_number }}天</span>
+        </div>
+        <div class="glass-header-title">
+            {{ day.title_zh }}
+            {% if day.title_en %}<span class="glass-header-title-en">{{ day.title_en }}</span>{% endif %}
+        </div>
+        {% if day.summary_zh %}
+        <div class="glass-header-summary">{{ day.summary_zh }}</div>
+        {% endif %}
+    </div>
+    <div class="glass-header-weekday">
+        <span>{{ day.weekday_zh }}</span>
+        {% set w = weather.get(day.date) %}
+        {% if w %}
+        <div class="weather-chip weather-chip--header" title="{{ w.label }}">
+            <span class="weather-chip-icon">{{ w.icon }}</span>
+            <span class="weather-chip-temp">{{ w.temp_max }}° / {{ w.temp_min }}°</span>
+        </div>
+        {% endif %}
+    </div>
+</header>

@@ -1,0 +1,91 @@
+/* Design Tokens - "The Modern Curator" Tactile Scrapbook */
+
+:root {
+    /* === Colors: Warmth & Soul === */
+    --background: #faf9f6;
+    --surface: #f5f4f0;
+    --surface-container-low: #f4f4f0;
+    --surface-container: #eeedea;
+    --surface-container-high: #e8e7e3;
+    --surface-container-highest: #e2e1dd;
+    --surface-container-lowest: #ffffff;
+    --surface-variant: #e8e5dc;
+
+    --primary: #914d00;
+    --primary-container: #ffaf6d;
+    --on-primary: #ffffff;
+    --on-primary-container: #311300;
+
+    --secondary: #6d5e4b;
+    --secondary-container: #f8dfc8;
+    --secondary-fixed: #98fabe;
+
+    --tertiary: #8b6b00;
+    --tertiary-container: #fdd355;
+
+    --on-surface: #1d1b18;
+    --on-surface-variant: #5d605c;
+
+    --outline-variant: rgba(145, 77, 0, 0.15);
+    --error-container: #ffdad6;
+    --on-error-container: #410002;
+
+    /* === Category Colors === */
+    --color-parking: #e8a44a;
+    --color-attraction: #5a8a5e;
+    --color-restaurant: #c25e3a;
+    --color-hotel: #7b6b8a;
+    --color-cafe: #8b6f4e;
+    --color-icecream: #d4849a;
+    --color-market: #6a8e7f;
+    --color-viewpoint: #4a7fa5;
+    --color-beach: #4ab5c4;
+    --color-playground: #e8a44a;
+    --color-shopping: #b07aa1;
+    --color-activity: #6aaa5e;
+
+    /* === Typography === */
+    --font-display: 'Plus Jakarta Sans', 'Noto Sans SC', sans-serif;
+    --font-body: 'Noto Sans SC', 'Plus Jakarta Sans', sans-serif;
+
+    --text-display-lg: 700 2rem/1.2 var(--font-display);
+    --text-display-sm: 700 1.5rem/1.3 var(--font-display);
+    --text-headline: 600 1.25rem/1.4 var(--font-display);
+    --text-title-lg: 600 1.125rem/1.5 var(--font-body);
+    --text-title-md: 500 1rem/1.6 var(--font-body);
+    --text-body: 400 0.9375rem/1.7 var(--font-body);
+    --text-label-lg: 500 0.875rem/1.5 var(--font-body);
+    --text-label-md: 500 0.75rem/1.5 var(--font-display);
+    --text-label-sm: 500 0.6875rem/1.4 var(--font-display);
+
+    /* === Spacing === */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 12px;
+    --space-lg: 16px;
+    --space-xl: 24px;
+    --space-2xl: 32px;
+    --space-3xl: 48px;
+
+    /* === Radius === */
+    --radius-sm: 12px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+    --radius-full: 9999px;
+
+    /* === Background === */
+    --bg-overlay-opacity: 0.75;
+
+    /* === Glass === */
+    --glass-bg: rgba(245, 244, 240, 0.80);
+    --glass-blur: 20px;
+
+    /* === Shadows (ambient, tinted) === */
+    --shadow-card: 0 2px 12px rgba(145, 77, 0, 0.04);
+    --shadow-float: 0 8px 24px rgba(145, 77, 0, 0.08);
+
+    /* === Safe area (iOS) === */
+    --safe-top: env(safe-area-inset-top, 0px);
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
+}

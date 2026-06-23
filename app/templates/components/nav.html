@@ -1,0 +1,12 @@
+<nav class="day-nav" aria-label="日期导航">
+    <div class="day-nav-scroll">
+        {% for d in trip.days %}
+        <a href="/day/{{ loop.index }}"
+           class="day-nav-item {% if loop.index == day_number %}day-nav-item--active{% endif %}"
+           {% if loop.index == day_number %}aria-current="page"{% endif %}>
+            <span class="day-nav-item-num">{{ d.date[5:7]|int }}.{{ d.date[8:10]|int }}</span>
+            <span class="day-nav-item-weekday">{{ d.weekday_zh }}</span>
+        </a>
+        {% endfor %}
+    </div>
+</nav>

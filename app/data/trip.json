@@ -1,0 +1,609 @@
+{
+  "title_zh": "法国诺曼底 2026 七月自驾",
+  "start_date": "2026-07-09",
+  "end_date": "2026-07-20",
+  "accommodation": {
+    "name_zh": "Courtyard by Marriott Ghent",
+    "google_maps_url": "https://maps.app.goo.gl/aXLDpcLAAp2H4XFe7?g_st=ic"
+  },
+  "coords": {
+    "name": "Caen",
+    "latitude": 49.1829,
+    "longitude": -0.3707,
+    "timezone": "Europe/Paris"
+  },
+  "days": [
+    {
+      "date": "2026-07-09",
+      "title_zh": "阿姆到根特",
+      "title_en": "Amsterdam to Ghent",
+      "weekday_zh": "周四",
+      "summary_zh": "阿姆出发，经充电和停车后游览根特老城，入住根特酒店",
+      "coords": {
+        "name": "Ghent",
+        "latitude": 51.0543,
+        "longitude": 3.7174,
+        "timezone": "Europe/Brussels"
+      },
+      "items": [
+        {
+          "category": "parking",
+          "name_zh": "沿途充电站",
+          "description_zh": "阿姆到根特沿途充电",
+          "google_maps_url": "https://maps.app.goo.gl/aVyLFMXfPKoaxsHP8?g_st=ic"
+        },
+        {
+          "category": "parking",
+          "name_zh": "沿途充电站",
+          "description_zh": "充电备选",
+          "google_maps_url": "https://maps.app.goo.gl/5u8abpmUjTzga1BX6?g_st=ic",
+          "is_backup": true
+        },
+        {
+          "category": "parking",
+          "name_zh": "根特停车场",
+          "description_zh": "首选",
+          "google_maps_url": "https://maps.app.goo.gl/aEQ9sJ6iDjupHvnq6?g_st=ic"
+        },
+        {
+          "category": "parking",
+          "name_zh": "根特停车场",
+          "description_zh": "备选",
+          "google_maps_url": "https://maps.app.goo.gl/ZCkmAH8P7JaihwBu7?g_st=ic",
+          "is_backup": true
+        },
+        {
+          "category": "attraction",
+          "name_zh": "圣巴夫大教堂",
+          "description_zh": "名画《神秘的羔羊》在这",
+          "google_maps_url": "https://maps.app.goo.gl/TaeQ7R1UFTETMZWi8?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "根特钟楼",
+          "google_maps_url": "https://maps.app.goo.gl/UUCNfV8yGC6rUQRs9?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "根特市政厅",
+          "google_maps_url": "https://maps.app.goo.gl/YiTz56jKd8WqnwmL7?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "香草码头",
+          "google_maps_url": "https://maps.app.goo.gl/t1wgh6RjHVcB2eB87?g_st=ic"
+        },
+        {
+          "category": "viewpoint",
+          "name_zh": "圣米歇尔桥",
+          "google_maps_url": "https://maps.app.goo.gl/F1w5AhdQacGQZHDC7?g_st=ic"
+        },
+        {
+          "category": "activity",
+          "name_zh": "运河游船",
+          "name_en": "Gent Watertoerist",
+          "google_maps_url": "https://maps.app.goo.gl/97cAHPggRY2psELM7?g_st=ic"
+        },
+        {
+          "category": "hotel",
+          "name_zh": "Courtyard by Marriott Ghent",
+          "description_zh": "入住根特酒店",
+          "google_maps_url": "https://maps.app.goo.gl/aXLDpcLAAp2H4XFe7?g_st=ic"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-10",
+      "title_zh": "布鲁日一日",
+      "title_en": "Bruges",
+      "weekday_zh": "周五",
+      "summary_zh": "布鲁日大广场、钟楼、教堂、玫瑰码头和爱之湖",
+      "coords": {
+        "name": "Bruges",
+        "latitude": 51.2093,
+        "longitude": 3.2247,
+        "timezone": "Europe/Brussels"
+      },
+      "items": [
+        {
+          "category": "parking",
+          "name_zh": "布鲁日停车场",
+          "description_zh": "首选",
+          "google_maps_url": "https://maps.app.goo.gl/HBPRK4jNZyc21DDL9?g_st=ic"
+        },
+        {
+          "category": "parking",
+          "name_zh": "布鲁日停车场",
+          "description_zh": "备选",
+          "google_maps_url": "https://maps.app.goo.gl/b1CmHPL1wPEd7BvT6?g_st=ic",
+          "is_backup": true
+        },
+        {
+          "category": "attraction",
+          "name_zh": "布鲁日大广场",
+          "google_maps_url": "https://maps.app.goo.gl/WE4ZBwLQWFQdztS96?g_st=ic"
+        },
+        {
+          "category": "viewpoint",
+          "name_zh": "布鲁日钟楼",
+          "google_maps_url": "https://maps.app.goo.gl/e4N1PfcprmWscmoW7?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "圣血圣殿",
+          "google_maps_url": "https://maps.app.goo.gl/u1qygyRjqwtcZ7GZ8?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "市政厅",
+          "google_maps_url": "https://maps.app.goo.gl/VSTQxJJZFFd2gucYA?g_st=ic"
+        },
+        {
+          "category": "viewpoint",
+          "name_zh": "玫瑰码头",
+          "google_maps_url": "https://maps.app.goo.gl/Zb2xgYHJstWN26Cc6?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "圣母教堂",
+          "name_en": "Onze-Lieve-Vrouwekerk",
+          "google_maps_url": "https://maps.app.goo.gl/zQPgjtmbJJhUs7SL8?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "圣救主主教座堂",
+          "name_en": "Sint-Salvatorskathedraal",
+          "google_maps_url": "https://maps.app.goo.gl/RYr2XLfxRPWoTNBG9?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "葡萄园皇家贝居安会院",
+          "name_en": "Begijnhof",
+          "google_maps_url": "https://maps.app.goo.gl/sCeD8YeDetKcCZjp9?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "爱之湖",
+          "name_en": "Lake of Love Minnewater",
+          "google_maps_url": "https://maps.app.goo.gl/3vBwxGyJGZkc27Yy5?g_st=ic"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-11",
+      "title_zh": "退房去诺曼底营地",
+      "title_en": "To Normandy",
+      "weekday_zh": "周六",
+      "summary_zh": "退房后前往 Camping Les Hautes Coutures，途中采购和超充",
+      "items": [
+        {
+          "category": "hotel",
+          "name_zh": "Camping Les Hautes Coutures",
+          "name_en": "Camping Capfun - Hautes Coutures",
+          "description_zh": "入住营地",
+          "google_maps_url": "https://maps.app.goo.gl/7LmJvASUdzKLYWzY7?g_st=ic"
+        },
+        {
+          "category": "supermarket",
+          "name_zh": "采购",
+          "google_maps_url": "https://maps.app.goo.gl/GDHqESaoSWuGFfj69?g_st=ic"
+        },
+        {
+          "category": "parking",
+          "name_zh": "超充站",
+          "google_maps_url": "https://maps.app.goo.gl/MBpfMgLLuj4xB3YCA?g_st=ic"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-12",
+      "title_zh": "卡昂",
+      "title_en": "Caen",
+      "weekday_zh": "周日",
+      "summary_zh": "卡昂教堂、城堡、和平纪念馆，顺路补给",
+      "items": [
+        {
+          "category": "parking",
+          "name_zh": "卡昂停车场",
+          "google_maps_url": "https://maps.app.goo.gl/D6s6ZExBH1xDPchb9?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "Église Saint-Jean 天主教堂",
+          "google_maps_url": "https://maps.app.goo.gl/L9L7BrHwVeun1Tvz6?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "圣皮埃尔教堂",
+          "name_en": "Église Saint-Pierre de Caen",
+          "google_maps_url": "https://maps.app.goo.gl/TJyfw61utNGm5USx8?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "康城城堡",
+          "google_maps_url": "https://maps.app.goo.gl/81Fij7KBC8CfYCAx6?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "和平纪念馆",
+          "name_en": "Mémorial de Caen",
+          "google_maps_url": "https://maps.app.goo.gl/2tvD3Q1JuowTuaLD9?g_st=ic"
+        },
+        {
+          "category": "supermarket",
+          "name_zh": "亚超",
+          "google_maps_url": "https://maps.app.goo.gl/dPWG2BWzWqBgeD7t6?g_st=ic"
+        },
+        {
+          "category": "supermarket",
+          "name_zh": "土店",
+          "google_maps_url": "https://maps.app.goo.gl/HDLBzTcChqgRa7Ay6?g_st=ic"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "title_zh": "象鼻山",
+      "title_en": "Etretat",
+      "weekday_zh": "周一",
+      "summary_zh": "埃特勒塔海滩、大象鼻山、小象鼻山和观景台",
+      "coords": {
+        "name": "Etretat",
+        "latitude": 49.7061,
+        "longitude": 0.2050,
+        "timezone": "Europe/Paris"
+      },
+      "items": [
+        {
+          "category": "parking",
+          "name_zh": "象鼻山停车场",
+          "description_zh": "首选",
+          "google_maps_url": "https://maps.app.goo.gl/2hZW7f91jev1x9R49?g_st=ic"
+        },
+        {
+          "category": "parking",
+          "name_zh": "象鼻山停车场",
+          "description_zh": "备选",
+          "google_maps_url": "https://maps.app.goo.gl/hR2tKsWD8Pu6vkTw6?g_st=ic",
+          "is_backup": true
+        },
+        {
+          "category": "beach",
+          "name_zh": "海滩",
+          "google_maps_url": "https://maps.app.goo.gl/yg9vSgWvTPzBSARu9?g_st=ic"
+        },
+        {
+          "category": "viewpoint",
+          "name_zh": "大象鼻山",
+          "google_maps_url": "https://maps.app.goo.gl/v2tQzRCmZo6e1uxQ9?g_st=ic"
+        },
+        {
+          "category": "viewpoint",
+          "name_zh": "观景台",
+          "google_maps_url": "https://maps.app.goo.gl/duSWrYCqp7fDxbB8A?g_st=ic"
+        },
+        {
+          "category": "viewpoint",
+          "name_zh": "观景台",
+          "google_maps_url": "https://maps.app.goo.gl/sxK4WnpWcWfekyYKA?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "教堂",
+          "google_maps_url": "https://maps.app.goo.gl/CbsfjdtDPrP89WSe8?g_st=ic"
+        },
+        {
+          "category": "viewpoint",
+          "name_zh": "小象鼻山",
+          "google_maps_url": "https://maps.app.goo.gl/wyC4m1qeCRrN56jEA?g_st=ic"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-14",
+      "title_zh": "巴约和登陆海滩",
+      "title_en": "Bayeux and D-Day Beaches",
+      "weekday_zh": "周二",
+      "summary_zh": "国庆日避开大景点，安排巴约和登陆海滩一线",
+      "notes": [
+        "此日为国庆日，避免安排大景点"
+      ],
+      "coords": {
+        "name": "Bayeux",
+        "latitude": 49.2765,
+        "longitude": -0.7039,
+        "timezone": "Europe/Paris"
+      },
+      "items": [
+        {
+          "category": "parking",
+          "name_zh": "巴约停车场",
+          "google_maps_url": "https://maps.app.goo.gl/MYmTfNDzm6yjorpZ7?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "巴约大教堂",
+          "google_maps_url": "https://maps.app.goo.gl/zukk9vyiE467AkD87?g_st=ic"
+        },
+        {
+          "category": "restaurant",
+          "name_zh": "餐厅推荐",
+          "description_zh": "自助",
+          "google_maps_url": "https://maps.app.goo.gl/L4Tpmfpz1bpSEDA86?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "美军公墓",
+          "google_maps_url": "https://maps.app.goo.gl/CxgJeAM2MKPjutN96?g_st=ic"
+        },
+        {
+          "category": "beach",
+          "name_zh": "登陆海滩",
+          "google_maps_url": "https://maps.app.goo.gl/7JWFG6s9tYBSL3rD6?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "炮台",
+          "google_maps_url": "https://maps.app.goo.gl/dbVM7zAULqKQ4YnE6?g_st=ic"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-15",
+      "title_zh": "Trouville、Deauville 和 Honfleur",
+      "title_en": "Trouville, Deauville and Honfleur",
+      "weekday_zh": "周三",
+      "summary_zh": "特鲁维尔集市和海滩、多维尔沙滩，再去翁弗勒尔港口小镇",
+      "coords": {
+        "name": "Trouville-sur-Mer",
+        "latitude": 49.3667,
+        "longitude": 0.0800,
+        "timezone": "Europe/Paris"
+      },
+      "items": [
+        {
+          "category": "parking",
+          "name_zh": "Trouville 停车场",
+          "description_zh": "首选",
+          "google_maps_url": "https://maps.app.goo.gl/aCaSNmcWKieJxtH77?g_st=ic"
+        },
+        {
+          "category": "market",
+          "name_zh": "Trouville 集市",
+          "description_zh": "周三上午",
+          "google_maps_url": "https://maps.app.goo.gl/oueSpzvUTQW58mVw6?g_st=ic"
+        },
+        {
+          "category": "beach",
+          "name_zh": "Trouville 海滩",
+          "google_maps_url": "https://maps.app.goo.gl/R831f2DF2dZSu8Rh6?g_st=ic"
+        },
+        {
+          "category": "parking",
+          "name_zh": "Deauville 停车场",
+          "description_zh": "备选",
+          "google_maps_url": "https://maps.app.goo.gl/m4fWERq1Jy4gamce7?g_st=ic",
+          "is_backup": true
+        },
+        {
+          "category": "beach",
+          "name_zh": "Deauville 沙滩",
+          "google_maps_url": "https://maps.app.goo.gl/D368mNSBLRJpQoVTA?g_st=ic"
+        },
+        {
+          "category": "parking",
+          "name_zh": "Honfleur 停车场",
+          "description_zh": "首选",
+          "google_maps_url": "https://maps.app.goo.gl/UUCQMJNq5Jm8Fw95A?g_st=ic"
+        },
+        {
+          "category": "parking",
+          "name_zh": "Honfleur 停车场",
+          "description_zh": "备选",
+          "google_maps_url": "https://maps.app.goo.gl/2Rp1LPBUrafsjimx6?g_st=ic",
+          "is_backup": true
+        },
+        {
+          "category": "attraction",
+          "name_zh": "天主教堂",
+          "google_maps_url": "https://maps.app.goo.gl/mwFu3UN3mrMZsrco7?g_st=ic"
+        },
+        {
+          "category": "viewpoint",
+          "name_zh": "Honfleur 港口",
+          "google_maps_url": "https://maps.app.goo.gl/TP69Zd8RNJTMunZUA?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "周杰伦 MV 取景地",
+          "google_maps_url": "https://maps.app.goo.gl/6hSNq9j2nM8Qn7uUA?g_st=ic"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-16",
+      "title_zh": "圣米歇尔山",
+      "title_en": "Mont Saint-Michel",
+      "weekday_zh": "周四",
+      "summary_zh": "大潮日，晚点出发看落日涨潮、上山小镇和草地观景点",
+      "notes": [
+        "此日大潮，可以晚点出发看落日涨潮"
+      ],
+      "coords": {
+        "name": "Mont Saint-Michel",
+        "latitude": 48.6361,
+        "longitude": -1.5115,
+        "timezone": "Europe/Paris"
+      },
+      "items": [
+        {
+          "category": "parking",
+          "name_zh": "圣米歇尔山停车场",
+          "google_maps_url": "https://maps.app.goo.gl/HpUt3Tp1jTdUTELcA?g_st=ic"
+        },
+        {
+          "category": "activity",
+          "name_zh": "摆渡车",
+          "description_zh": "坐摆渡车去山脚",
+          "google_maps_url": "https://maps.app.goo.gl/pTbTw8F6PAzBi7mQA?g_st=ic"
+        },
+        {
+          "category": "attraction",
+          "name_zh": "上山小镇",
+          "google_maps_url": "https://maps.app.goo.gl/jn411a72evzR5N3k6?g_st=ic"
+        },
+        {
+          "category": "parking",
+          "name_zh": "草地和羊的停车场",
+          "description_zh": "傍晚去",
+          "google_maps_url": "https://maps.app.goo.gl/TosgBvRgfbeMkuVW9?g_st=ic"
+        },
+        {
+          "category": "viewpoint",
+          "name_zh": "圣米歇尔山观景点",
+          "google_maps_url": "https://maps.app.goo.gl/cDkBT9qfhQBdnFKy9?g_st=ic"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "title_zh": "Free Day",
+      "title_en": "Free Day",
+      "weekday_zh": "周五",
+      "summary_zh": "自由活动，巴约游乐场周五晚有音乐会",
+      "coords": {
+        "name": "Bayeux",
+        "latitude": 49.2765,
+        "longitude": -0.7039,
+        "timezone": "Europe/Paris"
+      },
+      "items": [
+        {
+          "category": "playground",
+          "name_zh": "巴约游乐场",
+          "description_zh": "每周五晚有音乐会",
+          "google_maps_url": "https://maps.app.goo.gl/UFTV9UpPQaVbpone9?g_st=ic"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-18",
+      "title_zh": "退房去北部海岸",
+      "title_en": "To the Northern Coast",
+      "weekday_zh": "周六",
+      "summary_zh": "退房后可途径自助餐、playground 和白崖，入住 Best Western Marquise",
+      "coords": {
+        "name": "Marquise",
+        "latitude": 50.8125,
+        "longitude": 1.7073,
+        "timezone": "Europe/Paris"
+      },
+      "items": [
+        {
+          "category": "restaurant",
+          "name_zh": "途径自助餐",
+          "google_maps_url": "https://maps.app.goo.gl/EjCUj3VUMu5C3n6z5?g_st=ic"
+        },
+        {
+          "category": "playground",
+          "name_zh": "途径 Playground",
+          "google_maps_url": "https://maps.app.goo.gl/wmfmcE9Gqw4d4RoJ7?g_st=ic"
+        },
+        {
+          "category": "viewpoint",
+          "name_zh": "途径白崖",
+          "google_maps_url": "https://maps.app.goo.gl/DQFrDAmSaZuiR4KN6?g_st=ic"
+        },
+        {
+          "category": "hotel",
+          "name_zh": "Best Western Marquise",
+          "description_zh": "入住酒店",
+          "google_maps_url": "https://maps.app.goo.gl/NnRS9jHd89dwoMgT8?g_st=ic"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-19",
+      "title_zh": "国家水族馆和加莱",
+      "title_en": "Nausicaa and Calais",
+      "weekday_zh": "周日",
+      "summary_zh": "瑙喜嘉国家水族馆、加莱停车和机械恐龙/机械蜥蜴",
+      "coords": {
+        "name": "Boulogne-sur-Mer",
+        "latitude": 50.7264,
+        "longitude": 1.6147,
+        "timezone": "Europe/Paris"
+      },
+      "items": [
+        {
+          "category": "attraction",
+          "name_zh": "瑙喜嘉国家水族馆",
+          "google_maps_url": "https://maps.app.goo.gl/Z6w7YH7CQZcNV2zG7?g_st=ic"
+        },
+        {
+          "category": "parking",
+          "name_zh": "加莱停车场",
+          "description_zh": "首选",
+          "google_maps_url": "https://maps.app.goo.gl/yp7XAKFqBE8uUyWZ6?g_st=ic"
+        },
+        {
+          "category": "parking",
+          "name_zh": "加莱停车场",
+          "description_zh": "备选",
+          "google_maps_url": "https://maps.app.goo.gl/hjBH1bGWRs14DSPi6?g_st=ic",
+          "is_backup": true
+        },
+        {
+          "category": "activity",
+          "name_zh": "机械恐龙和机械蜥蜴",
+          "description_zh": "乘坐需提前买票",
+          "google_maps_url": "https://maps.app.goo.gl/akdsFXG3eMtiFCaC9?g_st=ic"
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "title_zh": "退房回阿姆",
+      "title_en": "Return to Amsterdam",
+      "weekday_zh": "周一",
+      "summary_zh": "退房回阿姆，可途径比利时 Oostende 吃海鲜看海豹",
+      "coords": {
+        "name": "Oostende",
+        "latitude": 51.2303,
+        "longitude": 2.9156,
+        "timezone": "Europe/Brussels"
+      },
+      "items": [
+        {
+          "category": "parking",
+          "name_zh": "Oostende 停车场",
+          "description_zh": "首选",
+          "google_maps_url": "https://maps.app.goo.gl/jdsD4b94PG4mnEtM9?g_st=ic"
+        },
+        {
+          "category": "parking",
+          "name_zh": "Oostende 停车场",
+          "description_zh": "备选",
+          "google_maps_url": "https://maps.app.goo.gl/MGLsvv3Yyrdohs6LA?g_st=ic",
+          "is_backup": true
+        },
+        {
+          "category": "beach",
+          "name_zh": "海豹",
+          "description_zh": "比利时 Oostende 看海豹",
+          "google_maps_url": "https://maps.app.goo.gl/SAkDMrq1F1b9dvn49?g_st=ic"
+        },
+        {
+          "category": "market",
+          "name_zh": "海鲜市场",
+          "description_zh": "吃海鲜",
+          "google_maps_url": "https://maps.app.goo.gl/Bkiwit4KdqagHCkL7?g_st=ic"
+        },
+        {
+          "category": "note",
+          "name_zh": "回阿姆"
+        }
+      ]
+    }
+  ]
+}

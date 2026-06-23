@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="overview-page">
+    <header class="overview-header">
+        <h1 class="overview-title">{{ trip.title_zh }}</h1>
+        <p class="overview-dates">{{ trip.start_date }} ~ {{ trip.end_date }}</p>
+    </header>
+
+    <div class="day-grid">
+        {% for day in trip.days %}
+        <a href="/day/{{ loop.index }}" class="day-grid-card animate-in">
+            <div class="day-grid-card-number">Day {{ loop.index }}</div>
+            <div class="day-grid-card-date">{{ day.date[5:] }}</div>
+            <div class="day-grid-card-weekday">{{ day.weekday_zh }}</div>
+            <h2 class="day-grid-card-title">{{ day.title_zh }}</h2>
+            {% if day.title_en %}
+            <p class="day-grid-card-en">{{ day.title_en }}</p>
+            {% endif %}
+            <div class="day-grid-card-count">{{ day.items|length }} 个项目</div>
+            {% set w = weather.get(day.date) %}
+            {% if w %}
+            <div class="weather-chip" title="{{ w.label }}">
+                <span class="weather-chip-icon">{{ w.icon }}</span>
+                <span class="weather-chip-temp">{{ w.temp_max }}° / {{ w.temp_min }}°</span>
+            </div>
+            {% endif %}
+        </a>
+        {% endfor %}
+    </div>
+
+    {% if trip.accommodation %}
+    <div class="accommodation-card animate-in">
+        <div class="accommodation-icon">{% include "components/icons/hotel.svg" %}</div>
+        <div class="accommodation-info">
+            <span class="accommodation-label">住宿</span>
+            <span class="accommodation-name">{{ trip.accommodation.name_zh }}</span>
+        </div>
+        {% if trip.accommodation.google_maps_url %}
+        <a href="{{ trip.accommodation.google_maps_url }}" target="_blank" rel="noopener" class="accommodation-link">导航</a>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/animations.js"></script>
+{% endblock %}

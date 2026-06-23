@@ -1,0 +1,80 @@
+{% set cat_en, cat_zh = get_category_label(item.category) %}
+{% set color = category_colors.get(item.category, '#8a8a7a') %}
+{% set is_parking = item.category == 'parking' %}
+
+{% if is_parking %}
+{# === Compact Parking Card === #}
+<div class="timeline-row timeline-row--parking animate-in {% if item.is_backup %}timeline-row--backup{% endif %}">
+    <div class="timeline-dot" style="background: {{ color }};">
+        <div class="timeline-dot-icon">
+            {% include "components/icons/" ~ item.category ~ ".svg" ignore missing %}
+        </div>
+    </div>
+    <div class="card card--parking {% if item.is_backup %}card--backup{% endif %}">
+        <div class="card-parking-header">
+            <span class="card-parking-icon" style="color: {{ color }};">{% include "components/icons/parking.svg" ignore missing %}</span>
+            <span class="card-parking-label">🚗 开车出发</span>
+            {% if item.is_backup %}<span class="card-backup-badge">备选</span>{% endif %}
+        </div>
+        <h3 class="card-name card-name--parking">{{ item.name_zh }}</h3>
+        {% if item.description_zh %}
+        <p class="card-desc card-desc--parking">
+            {%- set desc = item.description_zh -%}
+            {%- if '车程' in desc -%}
+                {%- set parts = desc.split('，') -%}
+                {%- for part in parts -%}
+                    {%- if '车程' in part -%}<span class="card-drive-time">{{ part }}</span>
+                    {%- else -%}{{ part }}
+                    {%- endif -%}
+                    {%- if not loop.last %}，{% endif -%}
+                {%- endfor -%}
+            {%- else -%}
+                {{ desc }}
+            {%- endif -%}
+        </p>
+        {% endif %}
+        {% if item.google_maps_url %}
+        <a href="{{ item.google_maps_url }}" target="_blank" rel="noopener" class="card-cta card-cta--parking" style="color: {{ color }};">
+            <svg class="card-cta-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            {{ get_cta(item) }}
+        </a>
+        {% endif %}
+    </div>
+</div>
+
+{% else %}
+{# === Regular Card === #}
+<div class="timeline-row animate-in {% if item.is_backup %}timeline-row--backup{% endif %}">
+    <div class="timeline-dot" style="background: {{ color }};">
+        <div class="timeline-dot-icon">
+            {% include "components/icons/" ~ item.category ~ ".svg" ignore missing %}
+        </div>
+    </div>
+    <div class="card {% if item.is_backup %}card--backup{% endif %}">
+        <div class="card-category" style="color: {{ color }};">
+            {{ cat_en }} / {{ cat_zh }}
+            {% if item.is_backup %}<span class="card-backup-badge">备选</span>{% endif %}
+        </div>
+        <div class="card-header">
+            <div class="card-icon" style="background: {{ color }}20;">
+                <span style="color: {{ color }};">{% include "components/icons/" ~ item.category ~ ".svg" ignore missing %}</span>
+            </div>
+            <div class="card-titles">
+                <h3 class="card-name">{{ item.name_zh }}</h3>
+                {% if item.name_en %}
+                <p class="card-name-en">{{ item.name_en }}</p>
+                {% endif %}
+            </div>
+        </div>
+        {% if item.description_zh %}
+        <p class="card-desc">{{ item.description_zh }}</p>
+        {% endif %}
+        {% if item.google_maps_url %}
+        <a href="{{ item.google_maps_url }}" target="_blank" rel="noopener" class="card-cta" style="background: {{ color }}12; color: {{ color }};">
+            <svg class="card-cta-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            {{ get_cta(item) }}
+        </a>
+        {% endif %}
+    </div>
+</div>
+{% endif %}

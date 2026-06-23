@@ -1,0 +1,31 @@
+<div class="timeline">
+    {% set current_tod = namespace(value='') %}
+    {% set prev_parking = namespace(value=false) %}
+    {% for item in day.items %}
+
+    {# Time-of-day separator #}
+    {% if item.time_of_day and item.time_of_day != current_tod.value %}
+    {% set current_tod.value = item.time_of_day %}
+    <div class="timeline-separator animate-in">
+        <span class="timeline-separator-label">
+            {% if item.time_of_day == 'morning' %}上午
+            {% elif item.time_of_day == 'afternoon' %}下午
+            {% elif item.time_of_day == 'evening' %}晚上
+            {% else %}{{ item.time_of_day }}{% endif %}
+        </span>
+    </div>
+    {% endif %}
+
+    {# Parking → Play transition separator #}
+    {% if prev_parking.value and item.category != 'parking' %}
+    <div class="timeline-arrive-separator animate-in">
+        <span class="timeline-arrive-label">📍 抵达后游览</span>
+    </div>
+    {% endif %}
+
+    {# Card #}
+    {% include "components/card.html" %}
+
+    {% set prev_parking.value = (item.category == 'parking') %}
+    {% endfor %}
+</div>
